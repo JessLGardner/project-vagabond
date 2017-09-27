@@ -121,7 +121,18 @@ a {
     word-wrap: break-word;
     top: 50%; right: 50%;
     transform: translate(55%,-50%);
+    @media screen and (max-width: 766px) {
+        font-size: 50px;  
+        margin-top: -100px;
+        margin-right: 10px;
+    }
+    @media screen and (max-width: 766px) and (orientation : landscape) {
+        margin-top: 130px;
+        font-size: 100px;
+    }
 }
+
+
 
 ///////////////////////////////////////
 //        IMAGES
