@@ -116,7 +116,13 @@ a {
     margin-top: 760px;
     padding: 35px 125px;
     position: relative;
-
+    @media screen and (max-width: 766px) {
+        margin-top: 500px;
+        padding: 20px 20px;
+    }
+    @media screen and (max-width: 766px) and (orientation : landscape) {
+        margin-top: 520px;
+    }
 }
 
 .city-header {
@@ -126,6 +132,7 @@ a {
     text-transform: uppercase;
     text-shadow: 6px 6px rgba(91, 92, 92, 0.50);
     margin: -500px auto;
+    margin-right: 50px;
     position: relative;
     z-index: 100;
     word-wrap: break-word;
@@ -137,7 +144,7 @@ a {
         margin-right: 10px;
     }
     @media screen and (max-width: 766px) and (orientation : landscape) {
-        margin-top: 130px;
+        margin-top: -180px;
         font-size: 100px;
     }
 }
